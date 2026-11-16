@@ -10,7 +10,7 @@ Status: early development. The engine, command API, MCP server, sample library, 
 
 Website: https://groovekit.org
 
-The latest macOS app (Apple silicon): [GrooveKit-macOS.zip](https://github.com/paulcpk/groovekit/releases/latest/download/GrooveKit-macOS.zip). Every version is on the [releases page](https://github.com/paulcpk/groovekit/releases).
+The latest macOS app (Apple silicon): [GrooveKit-macOS.zip](https://github.com/NuFoundry/groovekit/releases/latest/download/GrooveKit-macOS.zip). Every version is on the [releases page](https://github.com/NuFoundry/groovekit/releases).
 
 Unzip it and move GrooveKit to Applications. Until releases are notarized, macOS says it "could not verify" GrooveKit the first time: click Done, then in System Settings → Privacy & Security click Open Anyway next to "GrooveKit was blocked" and confirm. (Or run `xattr -dr com.apple.quarantine /Applications/GrooveKit.app` once.)
 
@@ -135,4 +135,4 @@ The agent is the exception, when you use it. The agent panel in the app sends yo
 
 AGPLv3 (Settings → About → Licenses in the app lists the third-party software it includes). GrooveKit builds on [JUCE 8](https://juce.com) (AGPLv3), [Tracktion Engine](https://github.com/Tracktion/tracktion_engine) (GPLv3), [Rubber Band](https://breakfastquay.com/rubberband/) (GPLv2+), [LAME](https://lame.sourceforge.io) (LGPLv2+, for MP3 export) and [IXWebSocket](https://github.com/machinezone/IXWebSocket) (BSD).
 
-Bug reports and feature requests are welcome as [issues](https://github.com/paulcpk/groovekit/issues/new/choose); pull requests aren't accepted. See [CONTRIBUTING.md](CONTRIBUTING.md).
+Bug reports and feature requests are welcome as [issues](https://github.com/NuFoundry/groovekit/issues/new/choose); pull requests aren't accepted. See [CONTRIBUTING.md](CONTRIBUTING.md).

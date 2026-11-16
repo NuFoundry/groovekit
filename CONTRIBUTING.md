@@ -8,9 +8,9 @@ GrooveKit is maintained by one person, and to keep the design and the code consi
 changes myself. So please **don't open pull requests**: they'll be closed. Instead, open a detailed
 issue, and I'll follow up there.
 
-- **Bug report**: [open one](https://github.com/paulcpk/groovekit/issues/new?template=bug_report.yml)
+- **Bug report**: [open one](https://github.com/NuFoundry/groovekit/issues/new?template=bug_report.yml)
   (labelled `bug`)
-- **Feature request**: [open one](https://github.com/paulcpk/groovekit/issues/new?template=feature_request.yml)
+- **Feature request**: [open one](https://github.com/NuFoundry/groovekit/issues/new?template=feature_request.yml)
   (labelled `enhancement`)
 
 The more detail, the faster I can act on it. A good bug report has:

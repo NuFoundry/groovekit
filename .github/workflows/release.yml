@@ -2,7 +2,7 @@ name: Release
 
 # Pushing a tag like v0.2.0 builds the macOS app and publishes it as a GitHub release, with the
 # app zipped under a fixed name so this link always downloads the newest one:
-# https://github.com/paulcpk/groovekit/releases/latest/download/GrooveKit-macOS.zip
+# https://github.com/NuFoundry/groovekit/releases/latest/download/GrooveKit-macOS.zip
 
 on:
   push:

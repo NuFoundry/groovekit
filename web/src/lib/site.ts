@@ -9,19 +9,19 @@ export const DESCRIPTION =
   "GrooveKit is an open-source, agent-first music production app for macOS. Claude arranges, mixes, automates and masters through the same API as the interface, and every change shows up live and undoes in one step.";
 
 export const LINKS = {
-  download: "https://github.com/paulcpk/groovekit/releases/latest/download/GrooveKit-macOS.zip",
-  releases: "https://github.com/paulcpk/groovekit/releases",
-  github: "https://github.com/paulcpk/groovekit",
-  issues: "https://github.com/paulcpk/groovekit/issues",
-  readme: "https://github.com/paulcpk/groovekit#readme",
-  contributing: "https://github.com/paulcpk/groovekit/blob/main/CONTRIBUTING.md",
-  newIssue: "https://github.com/paulcpk/groovekit/issues/new/choose",
-  license: "https://github.com/paulcpk/groovekit/blob/main/LICENSE",
-  protocol: "https://github.com/paulcpk/groovekit/blob/main/docs/protocol.md",
-  architecture: "https://github.com/paulcpk/groovekit/blob/main/docs/architecture.md",
-  roadmap: "https://github.com/paulcpk/groovekit/blob/main/docs/roadmap.md",
+  download: "https://github.com/NuFoundry/groovekit/releases/latest/download/GrooveKit-macOS.zip",
+  releases: "https://github.com/NuFoundry/groovekit/releases",
+  github: "https://github.com/NuFoundry/groovekit",
+  issues: "https://github.com/NuFoundry/groovekit/issues",
+  readme: "https://github.com/NuFoundry/groovekit#readme",
+  contributing: "https://github.com/NuFoundry/groovekit/blob/main/CONTRIBUTING.md",
+  newIssue: "https://github.com/NuFoundry/groovekit/issues/new/choose",
+  license: "https://github.com/NuFoundry/groovekit/blob/main/LICENSE",
+  protocol: "https://github.com/NuFoundry/groovekit/blob/main/docs/protocol.md",
+  architecture: "https://github.com/NuFoundry/groovekit/blob/main/docs/architecture.md",
+  roadmap: "https://github.com/NuFoundry/groovekit/blob/main/docs/roadmap.md",
   mcp: "https://modelcontextprotocol.io",
-  starter: "https://github.com/paulcpk/groovekit/releases/tag/starter-samples-v1",
+  starter: "https://github.com/NuFoundry/groovekit/releases/tag/starter-samples-v1",
 };
 
 /** Who's behind GrooveKit, in the footer and on the privacy page. */

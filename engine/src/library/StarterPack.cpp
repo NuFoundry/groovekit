@@ -17,7 +17,7 @@ namespace
     // The pack as samples/build-starter.mjs built and samples/README.md published it: the version
     // goes up when its contents change, and the size is the check that the whole zip came.
     constexpr int packVersion = 1;
-    constexpr const char* packUrl = "https://github.com/paulcpk/groovekit/releases/download/starter-samples-v1/GrooveKit-Starter.zip";
+    constexpr const char* packUrl = "https://github.com/NuFoundry/groovekit/releases/download/starter-samples-v1/GrooveKit-Starter.zip";
     constexpr int64_t packBytes = 124825497;
     constexpr int packFiles = 812;
     constexpr const char* packFolderName = "GrooveKit Starter";

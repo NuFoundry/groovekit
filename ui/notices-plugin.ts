@@ -178,7 +178,7 @@ export function noticesPlugin(): Plugin {
         "GrooveKit is free software: you can redistribute it and/or modify it under the terms of the",
         "GNU Affero General Public License as published by the Free Software Foundation, version 3.",
         "It comes WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or",
-        "FITNESS FOR A PARTICULAR PURPOSE. The source code is at https://github.com/paulcpk/groovekit",
+        "FITNESS FOR A PARTICULAR PURPOSE. The source code is at https://github.com/NuFoundry/groovekit",
         "",
         "It includes the third-party software listed after its license, under their own licenses.",
         "",

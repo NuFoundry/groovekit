@@ -320,7 +320,7 @@ function SuggestionSettings() {
   );
 }
 
-const SOURCE = "https://github.com/paulcpk/groovekit";
+const SOURCE = "https://github.com/NuFoundry/groovekit";
 
 /** The version, the license and the notices of the software GrooveKit includes. */
 function About() {
