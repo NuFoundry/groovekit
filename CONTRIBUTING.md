@@ -32,6 +32,6 @@ Please search the existing issues first, and add to one if it's already there.
 GrooveKit is released under the GNU Affero General Public License v3. The maintainer may also offer
 it under other terms (for example a commercial license). If code from someone else is ever accepted
 (only after asking in an issue first), its author confirms they wrote it, licenses it under the
-AGPLv3, and grants the maintainer (Paul Csapak) a perpetual, worldwide, non-exclusive, royalty-free,
+AGPLv3, and grants the maintainer, NuFoundry FlexCo, a perpetual, worldwide, non-exclusive, royalty-free,
 irrevocable license to use, modify and distribute it and to sublicense it under other terms,
 including proprietary ones, keeping their copyright.

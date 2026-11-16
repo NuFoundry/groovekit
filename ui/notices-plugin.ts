@@ -173,7 +173,7 @@ export function noticesPlugin(): Plugin {
       const seen = new Map<string, string>();
       const header = [
         "GrooveKit",
-        "Copyright (C) 2026 Paul Csapak and the GrooveKit contributors",
+        "Copyright (C) 2026 NuFoundry FlexCo",
         "",
         "GrooveKit is free software: you can redistribute it and/or modify it under the terms of the",
         "GNU Affero General Public License as published by the Free Software Foundation, version 3.",

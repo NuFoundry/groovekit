@@ -1,0 +1,126 @@
+---
+import Base from "../layouts/Base.astro";
+import { LINKS, NAME, OWNER } from "../lib/site";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const link = "font-medium text-fg underline decoration-accent underline-offset-4";
+---
+
+<Base title={`Terms · ${NAME}`} description="The terms for using GrooveKit and this website.">
+  <article class="container-site max-w-3xl py-24 sm:py-32">
+    <p class="eyebrow">Terms</p>
+    <h1 class="title mt-4">Free to use. Your music is yours.</h1>
+    <p class="mt-5 text-sm text-faint">Last updated 16 November 2026</p>
+
+    <div class="mt-12 space-y-10 leading-relaxed text-dim [&_h2]:mb-3 [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:text-fg [&_li]:mt-2 [&_ul]:list-disc [&_ul]:pl-5">
+      <section>
+        <h2>Who these terms are with</h2>
+        <p>
+          GrooveKit and groovekit.org are published by {OWNER.name}, Vienna, Austria (see the{" "}
+          <a href={`${base}/imprint/`} class={link}>imprint</a>). These terms apply when you download or use GrooveKit
+          or use this website. The <a href={`${base}/privacy/`} class={link}>privacy page</a> explains what happens to
+          your data.
+        </p>
+      </section>
+
+      <section>
+        <h2>The license</h2>
+        <p>
+          GrooveKit is free and open-source software under the{" "}
+          <a href={LINKS.license} class={link}>GNU Affero General Public License v3</a> (AGPLv3). You can use it for any
+          purpose, private or commercial, at no cost, and study, change and share its source code under that license.
+          If you pass on GrooveKit or a changed version, or let others use a changed version over a network, the AGPLv3
+          asks you to offer its source code under the same license. Where these terms and the AGPLv3 differ about the
+          software itself, the AGPLv3 applies. The third-party software in GrooveKit stays under its own licenses,
+          listed in the app under Settings → About → Licenses.
+        </p>
+        <p class="mt-4">
+          The name GrooveKit and its logo belong to {OWNER.name}. The license doesn't cover them: a changed version you
+          share should go by a name of its own.
+        </p>
+      </section>
+
+      <section>
+        <h2>What you make is yours</h2>
+        <p>
+          {OWNER.name} claims no rights to the songs, recordings, mixes, masters and other work you make with GrooveKit,
+          and the AGPLv3 doesn't apply to them. You can release, sell and license them however you like.
+        </p>
+        <ul>
+          <li>
+            The <a href={LINKS.starter} class={link}>starter samples</a> GrooveKit offers to download, and the sounds
+            built into its own instruments, are public domain (CC0 or Unlicense), so you can use them in your music
+            without asking or crediting anyone.
+          </li>
+          <li>
+            For everything you bring in yourself (samples, loops, reference tracks, recordings and plugins) you're
+            responsible for having the right to use it as you do. Reference tracks are only analysed and listened to,
+            on your Mac; using them doesn't give you any right to their music.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>The agent</h2>
+        <p>
+          GrooveKit's agent runs on an AI model you connect yourself: in the app with your own Anthropic API key, or
+          through Claude Code or another MCP client. That use is between you and the provider, under its terms and
+          prices; {OWNER.name} doesn't sell, resell or pay for it. The agent changes your song only through the same
+          steps you could take yourself, and every change can be undone, but it can misjudge what you meant or what
+          sounds good. Listen to what it did, and keep backups of work that matters.
+        </p>
+      </section>
+
+      <section>
+        <h2>Models and downloads</h2>
+        <p>
+          The listening and speech models GrooveKit downloads when you ask for them come from their own publishers,
+          under their own licenses (listed in the app). Downloads come from GitHub, where {OWNER.name} publishes the app
+          and the starter samples, and from Hugging Face for the models.
+        </p>
+      </section>
+
+      <section>
+        <h2>No warranty</h2>
+        <p>
+          GrooveKit is given away for free, as it is, without any warranty that it works without errors, fits a
+          particular purpose or keeps your files safe, as the AGPLv3 says. There's no right to support, updates or
+          particular features. Bug reports and feature requests are welcome as{" "}
+          <a href={LINKS.newIssue} class={link}>issues</a>, and {OWNER.name} may change, pause or stop GrooveKit and
+          this website at any time.
+        </p>
+      </section>
+
+      <section>
+        <h2>Liability</h2>
+        <p>
+          {OWNER.name} is liable without limit for damage it causes on purpose or through gross negligence, for injury
+          to life, body or health, and wherever the law doesn't allow a limit, including under product liability law.
+          Otherwise, because GrooveKit is free, {OWNER.name} isn't liable for slight negligence, and in particular not
+          for lost work, lost data or lost income. Save your work and keep backups.
+        </p>
+      </section>
+
+      <section>
+        <h2>This website</h2>
+        <p>
+          Texts, images and screenshots on groovekit.org are © {OWNER.name} unless stated otherwise; you may link to
+          them and quote them with a credit, but not otherwise reuse them without written consent. The website's source
+          code is part of the GrooveKit repository and under the AGPLv3 too. Links to other websites are theirs to
+          answer for.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes and law</h2>
+        <p>
+          These terms may change as GrooveKit does; the date above shows when they last did. Austrian law applies,
+          without its conflict-of-law rules and the UN Convention on Contracts for the International Sale of Goods. If
+          you're a consumer, the mandatory protections of the country you live in still apply, and you can bring a claim
+          there. Otherwise the courts of Vienna, Austria, decide. If part of these terms doesn't hold, the rest still
+          does. Questions go to <a href={`mailto:${OWNER.email}`} class={link}>{OWNER.email}</a>.
+        </p>
+      </section>
+    </div>
+  </article>
+</Base>

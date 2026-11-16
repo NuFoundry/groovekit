@@ -1,6 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
-import { CONTACT, LINKS, NAME } from "../lib/site";
+import { LINKS, NAME, OWNER } from "../lib/site";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const link = "font-medium text-fg underline decoration-accent underline-offset-4";
 ---
@@ -9,14 +11,15 @@ const link = "font-medium text-fg underline decoration-accent underline-offset-4
   <article class="container-site max-w-3xl py-24 sm:py-32">
     <p class="eyebrow">Privacy</p>
     <h1 class="title mt-4">Your music stays on your Mac.</h1>
-    <p class="mt-5 text-sm text-faint">Last updated 26 October 2026</p>
+    <p class="mt-5 text-sm text-faint">Last updated 16 November 2026</p>
 
     <div class="mt-12 space-y-10 leading-relaxed text-dim [&_h2]:mb-3 [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:text-fg [&_li]:mt-2 [&_ul]:list-disc [&_ul]:pl-5">
       <section>
         <h2>Who is responsible</h2>
         <p>
-          {CONTACT.name}, <a href={`mailto:${CONTACT.email}`} class={link}>{CONTACT.email}</a>. GrooveKit is a free,
-          non-commercial open-source project.
+          {OWNER.name}, {OWNER.address.join(", ")},{" "}
+          <a href={`mailto:${OWNER.email}`} class={link}>{OWNER.email}</a>. GrooveKit is a free open-source project
+          of {OWNER.name}; its full details are in the <a href={`${base}/imprint/`} class={link}>imprint</a>.
         </p>
       </section>
 
@@ -89,7 +92,7 @@ const link = "font-medium text-fg underline decoration-accent underline-offset-4
           You can ask for access to, correction or deletion of your personal data, and complain to a data protection
           authority. The GrooveKit project itself collects no personal data, so there’s usually nothing to hand over;
           for the website’s server logs, GitHub is the one to ask. Questions go to{" "}
-          <a href={`mailto:${CONTACT.email}`} class={link}>{CONTACT.email}</a>.
+          <a href={`mailto:${OWNER.email}`} class={link}>{OWNER.email}</a>.
         </p>
         <p class="mt-4">
           The source code of the website and the app is on{" "}

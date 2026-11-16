@@ -18,16 +18,17 @@ To publish a release, push a version tag: `git tag v0.2.0 && git push origin v0.
 
 ## Signing releases
 
-Releases are signed with a Developer ID and notarized by Apple when these repository secrets are set
-(Settings → Secrets and variables → Actions); without them they're signed ad hoc and macOS warns
-on first launch.
+Releases are signed with NuFoundry FlexCo's Developer ID and notarized by Apple when these
+repository secrets are set (Settings → Secrets and variables → Actions); without them they're
+signed ad hoc and macOS warns on first launch.
 
-1. Join the Apple Developer Program, and in Xcode → Settings → Accounts → Manage Certificates
-   create a **Developer ID Application** certificate. Export it from Keychain Access as a .p12
-   with a password.
+1. In NuFoundry's Apple Developer account, the Account Holder creates a **Developer ID
+   Application** certificate (Xcode → Settings → Accounts → the NuFoundry team → Manage
+   Certificates; only the Account Holder can create Developer ID certificates for an organization).
+   Export it from Keychain Access as a .p12 with a password.
 2. `APPLE_CERTIFICATE`: the .p12 as base64 (`base64 -i certificate.p12 | pbcopy`).
 3. `APPLE_CERTIFICATE_PASSWORD`: the .p12's password.
-4. `APPLE_SIGNING_IDENTITY`: the certificate's name, e.g. `Developer ID Application: Your Name (TEAMID1234)`
+4. `APPLE_SIGNING_IDENTITY`: the certificate's name, `Developer ID Application: NuFoundry FlexCo (TEAMID1234)` with NuFoundry's team ID
    (`security find-identity -v -p codesigning` lists it).
 5. In App Store Connect → Users and Access → Integrations → App Store Connect API, create a key
    with the Developer role, then set `APPLE_API_ISSUER` (the issuer ID), `APPLE_API_KEY` (the key ID)
@@ -133,6 +134,6 @@ The agent is the exception, when you use it. The agent panel in the app sends yo
 
 ## License
 
-AGPLv3 (Settings → About → Licenses in the app lists the third-party software it includes). GrooveKit builds on [JUCE 8](https://juce.com) (AGPLv3), [Tracktion Engine](https://github.com/Tracktion/tracktion_engine) (GPLv3), [Rubber Band](https://breakfastquay.com/rubberband/) (GPLv2+), [LAME](https://lame.sourceforge.io) (LGPLv2+, for MP3 export) and [IXWebSocket](https://github.com/machinezone/IXWebSocket) (BSD).
+Copyright © 2026 [NuFoundry FlexCo](https://nufoundry.com), Vienna. GrooveKit is released under the AGPLv3 (Settings → About → Licenses in the app lists the third-party software it includes). GrooveKit builds on [JUCE 8](https://juce.com) (AGPLv3), [Tracktion Engine](https://github.com/Tracktion/tracktion_engine) (GPLv3), [Rubber Band](https://breakfastquay.com/rubberband/) (GPLv2+), [LAME](https://lame.sourceforge.io) (LGPLv2+, for MP3 export) and [IXWebSocket](https://github.com/machinezone/IXWebSocket) (BSD).
 
 Bug reports and feature requests are welcome as [issues](https://github.com/NuFoundry/groovekit/issues/new/choose); pull requests aren't accepted. See [CONTRIBUTING.md](CONTRIBUTING.md).

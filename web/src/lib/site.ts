@@ -24,8 +24,17 @@ export const LINKS = {
   starter: "https://github.com/NuFoundry/groovekit/releases/tag/starter-samples-v1",
 };
 
-/** Who's behind GrooveKit, in the footer and on the privacy page. */
-export const CONTACT = { name: "Paul Csapak", email: "hello@paulcpk.com" };
+/** Who's behind GrooveKit: the owner and copyright holder, in the footer, the imprint and the privacy page. */
+export const OWNER = {
+  name: "NuFoundry FlexCo",
+  email: "office@nufoundry.com",
+  phone: "+43 660 363 9 363",
+  website: "https://nufoundry.com",
+  address: ["c/o welovetaxes OG", "Alsegger Straße 36/1", "1180 Wien", "Austria"],
+  register: "FN 648190x",
+  court: "Handelsgericht Wien",
+  chamber: "Wirtschaftskammer Wien (WKO Wien)",
+};
 
 /** The landing page's sections, in the header. The docs page has its own in DOCS_NAV. */
 export const NAV: [id: string, label: string][] = [

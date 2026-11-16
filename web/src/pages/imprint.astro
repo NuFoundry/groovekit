@@ -1,0 +1,85 @@
+---
+import Base from "../layouts/Base.astro";
+import { LINKS, NAME, OWNER } from "../lib/site";
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+
+const link = "font-medium text-fg underline decoration-accent underline-offset-4";
+const facts: [label: string, value: string][] = [
+  ["Company register number", OWNER.register],
+  ["Company register court", OWNER.court],
+  ["Membership", OWNER.chamber],
+];
+---
+
+<Base title={`Imprint · ${NAME}`} description="Who publishes GrooveKit and how to reach them.">
+  <article class="container-site max-w-3xl py-24 sm:py-32">
+    <p class="eyebrow">Imprint</p>
+    <h1 class="title mt-4">Who is behind GrooveKit.</h1>
+    <p class="mt-5 text-sm text-faint">
+      Information and disclosure under § 5 ECG, § 25 MedienG, § 63 GewO and § 14 UGB (Austria)
+    </p>
+
+    <div class="mt-12 space-y-10 leading-relaxed text-dim [&_h2]:mb-3 [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:text-fg">
+      <section>
+        <h2>Media owner and publisher</h2>
+        <address class="not-italic">
+          <span class="text-fg">{OWNER.name}</span>
+          {OWNER.address.map((line) => <><br />{line}</>)}
+        </address>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          Email: <a href={`mailto:${OWNER.email}`} class={link}>{OWNER.email}</a>
+          <br />
+          Phone: <a href={`tel:${OWNER.phone.replace(/\s/g, "")}`} class={link}>{OWNER.phone}</a>
+          <br />
+          Web: <a href={OWNER.website} class={link}>{OWNER.website.replace("https://", "")}</a>
+        </p>
+      </section>
+
+      <section>
+        <h2>Company</h2>
+        <dl class="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-[auto_1fr]">
+          {facts.map(([label, value]) => (
+            <>
+              <dt class="text-faint">{label}</dt>
+              <dd class="text-fg">{value}</dd>
+            </>
+          ))}
+        </dl>
+      </section>
+
+      <section>
+        <h2>What this website is about</h2>
+        <p>
+          It presents GrooveKit, a free and open-source music production app for macOS made by {OWNER.name}, and
+          explains how to download, use and build it.
+        </p>
+      </section>
+
+      <section>
+        <h2>Copyright and license</h2>
+        <p>
+          GrooveKit and this website are © {new Date().getFullYear()} {OWNER.name}. The app's source code is free
+          software under the <a href={LINKS.license} class={link}>GNU Affero General Public License v3</a>: you may use,
+          study, share and change it under that license's terms. Third-party software in GrooveKit stays under its own
+          licenses, listed in the app under Settings → About. The <a href={`${base}/terms/`} class={link}>terms</a> say
+          more about using GrooveKit and what you make with it. Texts, images and the GrooveKit name and logo on this
+          website may not be reused without {OWNER.name}'s written consent, unless the license says otherwise.
+        </p>
+      </section>
+
+      <section>
+        <h2>Links to other websites</h2>
+        <p>
+          We check the external links on this website with care but have no influence on what those sites say, and
+          aren't responsible for it. If a linked page breaks the law, let us know at{" "}
+          <a href={`mailto:${OWNER.email}`} class={link}>{OWNER.email}</a> and we'll remove the link.
+        </p>
+      </section>
+    </div>
+  </article>
+</Base>
